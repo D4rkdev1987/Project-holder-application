@@ -1,0 +1,39 @@
+.portfolio-sidebar-list-wrapper {
+    .portfolio-item-thumb {
+        padding: 21px;
+
+        .portfolio-thumb-img img {
+            width: 100%;
+        }
+
+        .text-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: underline;
+            
+            .title {
+                color: rgb(168, 10, 116);
+                font-size: 1.5em;
+                border-bottom: 1px solid $dark-teal;
+            }
+
+            .actions {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+
+                .action-icon {
+                    cursor: pointer;
+                    color: $teal;
+                    font-size: 1.9em;
+                    transition: 0.2s ease-in-out;
+    
+                    &:hover {
+                        color: rgba(179, 6, 6, 0.856);
+                    }
+                }
+            }           
+        }       
+    }
+}
