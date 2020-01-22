@@ -26,6 +26,7 @@ export default class PortfolioItem extends Component {
     //just use this to render out content
   const { id, description, thumb_image_url, logo_url} = this.props.item;
     return (
+      <Link to={`/portfolio/${id}`}>
         <div className="portfolio-item-wrapper" 
         onMouseEnter={() => this.handleMouseEnter()} //on mouse enter is the JS listener(listens to mouse event)-arrow function before function to stop it from running auto
         onMouseLeave={() => this.handleMouseLeave()}
@@ -44,6 +45,7 @@ export default class PortfolioItem extends Component {
             <div className="subtitle">{description}</div>
           </div>
         </div>
+      </Link>
     );
   }
 }

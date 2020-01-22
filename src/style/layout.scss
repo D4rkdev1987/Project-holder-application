@@ -1,0 +1,81 @@
+.content-page-wrapper {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 89px);
+    background-color: black;
+
+    .about-right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+        color: $dark-teal;
+    }
+
+    .right-column-contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 100px;
+
+        h1 {
+            color: rgb(168, 10, 116);
+            text-decoration: underline;
+        }
+
+        .facebook-right-column {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            color: rgb(168, 10, 116);
+            font-size: 22px;
+    
+            h3 {
+                text-decoration: underline;
+            }
+    
+            a {
+                color: $dark-teal;
+    
+                &:hover {
+                    color: red;
+                }
+            }
+    
+            p {
+                color: $dark-teal;
+            }
+        }
+
+        .bottega-column-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+            color: rgb(168, 10, 116);
+
+            a {
+                color: $dark-teal;
+    
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+
+        .contact-information-column-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 18px;
+            color: $warning;
+        }
+    }
+}
